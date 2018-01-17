@@ -13,10 +13,16 @@ class RecipesController < ApplicationController
 
 	def create
 		@recipe = Recipe.new(recipe_params)
+
+		if @recipe.save
+			redirect_to @recipe, notice: "Successfully created new recipe"
+		else
+			render 'new'
+		end
 	end
 
 	private
-	def receipe_params
+	def recipe_params
 		params.require(:recipe).permit(:title, :description)
 	end
 
