@@ -28,4 +28,5 @@ class RecipesController < ApplicationController
 
 	def find_recipe
 		@recipe = Recipe.find(params[:id])
+	end
 end
