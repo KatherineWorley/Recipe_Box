@@ -223,7 +223,7 @@ DEPENDENCIES
   haml (~> 5.0, >= 5.0.4)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  paperclip (~> 5.1)
+  paperclip (~> 5.0)
   puma (~> 3.7)
   rails (~> 5.1.4)
   sass-rails (~> 5.0)
